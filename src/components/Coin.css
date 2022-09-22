@@ -1,0 +1,104 @@
+a {
+  text-decoration: none; /* no underline */
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.crypto-container {
+  display: flex;
+  justify-content: center;
+}
+
+.crypto-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 1000px;
+}
+
+.crypto {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+
+  /*min-width: 200px;*/
+}
+
+.crypto h1 {
+  font-size: 16px;
+  width: 150px;
+}
+
+.crypto img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.crypto-symbol {
+  text-transform: uppercase;
+}
+
+.crypto-data {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.crypto-price {
+  width: 110px;
+}
+
+.crypto-volume {
+  width: 155px;
+}
+
+.crypto-marketcap {
+  width: 230px;
+}
+
+.crypto-graph {
+  margin-left: 30px;
+  width: 200px;
+  /* height: 30px; */
+}
+
+.crypto-percent {
+  width: 100px;
+}
+/*.crypto-ath {
+  width: 100px;
+}
+.crypto-chart {
+  width: 100px;
+  background-color: aqua;
+}*/
+
+.red {
+  color: #ed4848;
+}
+
+.green {
+  color: #75ad75;
+}
+
+/*-----Responsive----*/
+media only screen and (max-width: 375px) {
+  crypto-container {
+    width: 100%;
+  }
+  .crypto,
+  .crypto-data {
+  }
+  .crypto-price,
+  .crypto-volume,
+  .crypto-marketcap {
+    width: 60%;
+  }
+}
